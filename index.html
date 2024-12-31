@@ -1,5 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vårt Solsystem</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Vårt Solsystem</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Mars.html">Mars</a></li>
+                <li><a href="Jorden.html">Jorden</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/">3D View</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <img src="fontimage.jpg" alt="Solsystemet" class="main-image">
+            <div class="text-block">
+                <h2><strong>Vårt Solsystem</strong></h2>
+                <h3>Solsystemet består av sola og planetene...</h3>
+                <p>
+                    En planet er et himmellegeme som går rundt en stjerne, har nok masse til at den er rund...
+                </p>
+                <p>
+                    Ut fra denne definisjonen har solsystemet vårt åtte planeter...
+                </p>
+                <h3>Informasjon</h3>
+                <p>
+                    Alder: 4,543E9 år<br>
+                    Radius: 6 371 km<br>
+                    Masse: 5,972E24 kg<br>
+                    Avstand fra Solen: 149 600 000 km<br>
+                    Overflateareal: 510 100 000 km²<br>
+                    Folketall: 7,753 milliarder (2020)
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
@@ -32,6 +98,7 @@
     <section> 
     <div class="conatiner">
     <img src="fontimage.jpg" alt="Solsystemet" />
+    
     <div class="text-block">
       <h2>its a day in space</h2>
       <p>crazy feeling</p>
